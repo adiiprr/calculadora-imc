@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="estilocalculadora.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Calculadora de IMC</h1>
+    <p class="lead">Insira seu peso e altura para calcular o Índice de Massa Corporal.</p>
+
+    <form id="imc-form" novalidate>
+      <label for="peso">Peso (kg)</label>
+      <input id="peso" type="number" step="0.01" placeholder="Ex: 70.5">
+
+      <label for="altura">Altura (m)</label>
+      <input id="altura" type="number" step="0.01" placeholder="Ex: 1.75">
+
+      <button id="calc" type="submit">Calcular</button>
+    </form>
+
+    <p id="imcResult">IMC: —</p>
+    <p id="imcClass">Classificação: —</p>
+  </main>
+
+  <script src="calc.js"></script>
+</body>
+</html>
